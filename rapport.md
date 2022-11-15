@@ -2,7 +2,13 @@
 
 ## 1. Synthèse de l'article
 - Contexte : quelle est la problématique générale abordée par l'article ?
+
+      In astronomy, sky surveys contain a huge quantity of light-emitting sources, representing astronomical objects. Manually extracting every object is not feasible, due also to the low intensities of many sources, often close to the noise level.
+
 - Objectifs : quel est le but de la méthode proposée dans l'article ?
+
+        The goal of this paper is to propose a method to automatically extract astronomical sources from sky surveys.
+
 - Hypothèses : pourquoi l'approche proposée est-elle pertinente pour atteindre les objectifs ?
 - Méthode : comment fonctionne la méthode proposée ?
 - Méthodologie de validation : quels sont les tests proposés par les auteurs pour valider leurs hypothèses ? pour valider leur méthode ?

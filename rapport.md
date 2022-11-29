@@ -3,35 +3,26 @@
 ## 1. Synthèse de l'article
 - Contexte : quelle est la problématique générale abordée par l'article ?
 
-      In astronomy, sky surveys contain a huge quantity of light-emitting sources, representing astronomical objects. Manually extracting every object is not feasible, due also to the low intensities of many sources, often close to the noise level.
-
-      <!-- translation in french -->
-
-      En astronomie, les cartographies du ciel contiennent une quantité énorme de sources lumineuses, représentant des objets astronomiques. Extraire manuellement chaque objet n'est pas faisable, en raison aussi des faibles intensités de nombreuses sources, souvent proches du niveau de bruit.
+      La problématique traité par ce papier décole du fait qu'en astronomie, les images contiennent une énorme quantié de sources lumineuses. L'extraction manuelle de chacun de ces sources n'est pas envisageable. De plus, beaucoup de ces sources ont une intensité faible, ils se rapprochent quasiment au niveau de bruit.
 
 - Objectifs : quel est le but de la méthode proposée dans l'article ?
 
-      The goal of this paper is to propose a method to automatically extract astronomical sources from sky surveys optimal with faint extended sources.
+      Cet article propose une méthode pour extraire de manière automatique sur des photographies, ces sources lumineuses, que l'on a mentionné plus haut. Cette méthode s'appelle MTObjects.
 
-      <!-- translation in french -->
-
-      L'objectif de cet article est de proposer une méthode pour extraire automatiquement des sources astronomiques à partir de cartographies du ciel optimales avec des sources étendues faibles.
 
 - Hypothèses : pourquoi l'approche proposée est-elle pertinente pour atteindre les objectifs ?
 
-      Using SExtractor as a reference, the paper describes an improvement of a previous method proposed by the authors. It is a Max-Tree-based method for extraction of faint extended sources without using a stronger image smoothing.
-
-      <!-- translation in french -->
-
-      En utilisant SExtractor comme référence, l'article décrit une amélioration d'une méthode précédente proposée par les auteurs. Il s'agit d'une méthode basée sur les Max-Trees pour l'extraction de sources étendues faibles sans utiliser un affinage d'image plus fort.
+      Cet article compare la méthode MTObjects avec SExtractor, une méthode de référence pour l'extraction de sources. MTObjects pourrait être plus pertinente que SExtractor pour l'extraction de sources, car contrairement à SExtractor, MTObjects n'utilise un mécanisme de treshold fixe, mais il se base sur chaque node de l'arbre Max-Tree.
 
 - Méthode : comment fonctionne la méthode proposée ?
 
-      The Max-Tree structure is a hierarchical representation of an image, in which attributes can be computed in every node. Object detection is performed on the nodes of the tree and it relies on the distribution of a statistic calculated using the power attribute, compared to the expected distribution in case of noise. Statistical tests are presented, a comparison with the object extraction of SExtractor is shown and results are discussed.
+      L'algorithme mtObjects prend en entrée une image I, une fonction nodeTest, un niveau de significance α, un gain g et un facteur de déplacement λ. Il renvoie un arbre Max-Tree M. Les nœuds de M correspondant aux objets sont marqués. L'algorithme mtObjects est décrit en détail dans l'article.
+      Dans un premier temps on éstime la moyenne et la variance de l'arrière plan de l'image. On applique ensuite un seuillage à l'image I, en soustrayant la moyenne de l'arrière plan. On crée ensuite une représentation Max-Tree de l'image. On applique ensuite la fonction SignificantNodes sur l'arbre Max-Tree. On trouve ensuite les objets dans l'arbre Max-Tree. On déplace ensuite les objets vers le haut de l'arbre Max-Tree.
 
-      <!-- translation in french -->
+- Méthode : comment MTObjects se compare-t-il à SExtractor ?
 
-      La structure Max-Tree est une représentation hiérarchique d'une image, dans laquelle des attributs peuvent être calculés dans chaque nœud. La détection d'objets est effectuée sur les nœuds de l'arbre et elle repose sur la distribution d'une statistique calculée à l'aide de l'attribut de puissance, comparée à la distribution attendue en cas de bruit. Des tests statistiques sont présentés, une comparaison avec l'extraction d'objets de SExtractor est montrée et les résultats sont discutés.
+      De manière générale, MTObjects conserve mieux les contours de faible intensité des objets.
+
 
 - Méthodologie de validation : quels sont les tests proposés par les auteurs pour valider leurs hypothèses ? pour valider leur méthode ?
 - Résultats : quels sont les résultats obtenus par les auteurs ?

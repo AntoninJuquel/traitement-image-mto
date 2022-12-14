@@ -34,8 +34,16 @@
 
 ## 2. Etude de l'implémentation
 - la portée des programmes fournis : le code fourni permet-il de reproduire la totalité des experiences présentées dans l'article ? (si non, quels sont les points manquants ?)
+
+      Le code fourni permet de reproduire les expériences présentées dans l'article.
+
 - la structure : quelles sont les interfaces fournies ? le code est-il bien structuré ? pensez vous pouvoir le réutiliser dans un autre contexte ?
+
+      Le code est bien structuré. Il est possible de le réutiliser dans un autre contexte.
+
 - la fidélité : le code fourni correspond-il à ce qui est décrit dans l'article ? Si non, quelles sont les différences notables ?
+
+      Le code fourni correspond à ce qui est décrit dans l'article.
 
 ## 3. Expérimentations
 - expériences reproduites : décrivez les expériences que vous avez choisies de reproduire.
@@ -44,12 +52,12 @@
 
 - configuration des tests : précisez les paramètres que vous avez utilisés pour reproduire les expériences. (choix des images, choix des paramètres).
 
-
+      Nous avons utilisé les images de galaxies, de poussières et d'artefacts. Nous avons utilisé les paramètres par défaut.
 
 - analyse des résultats : analysez les résultats obtenus, sont-ils conformes aux résultats présentés dans l'article ? (comparaison avec les résultats de l'article)
 
-
+      Les résultats obtenus sont conformes aux résultats présentés dans l'article.
 
 - expériences complémentaires : pouvez-vous proposer des expériences complémentaires pour évaluer la méthode ? (choix des images, choix des paramètres).
-      
-      Oui, images prisent sur internet
+
+      Nous avons mené des expériences complémentaires sur les images de galaxies, de poussières et d'artefacts. Et des images sur internet.

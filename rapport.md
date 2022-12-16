@@ -65,15 +65,24 @@
 ## 2. Etude de l'implémentation
 - la portée des programmes fournis : le code fourni permet-il de reproduire la totalité des experiences présentées dans l'article ? (si non, quels sont les points manquants ?)
 
-      Le code fourni permet de reproduire les expériences présentées dans l'article.
+      Le code fourni permet de reproduire les expériences présentées dans l'article, cependant les images utilisées ne sont pas fournies. Il est donc nécessaire de les trouver sur internet ou de les générer soi-même.
 
 - la structure : quelles sont les interfaces fournies ? le code est-il bien structuré ? pensez vous pouvoir le réutiliser dans un autre contexte ?
 
-      Le code est bien structuré. Il est possible de le réutiliser dans un autre contexte.
+      Il n'y a pas d'interface graphique. L'utilisation du code se fait donc uniquement en ligne de commande et est donc limitée à des utilisateurs avertis.
+      
+      Le code est bien structuré, il est facile à comprendre et à modifier, chaque fonction est commentée et expliquée. Plus particulièrement, le code est divisé en plusieurs fichiers, ce qui facilite la compréhension et la modification du code. De plus, il est bien documenté par un README qui contient des exemples d'utilisation.
+      
+      Nous pensons que le code peut être réutilisé dans un autre contexte, mais il faudrait le modifier pour qu'il puisse être utilisé avec d'autres types d'images que les FITS, en effet la détéction de sources d'image est un problème récurrent dans de nombreux domaines de l'astrophysique, et il est donc possible que ce code puisse être réutilisé dans d'autres domaines.
 
 - la fidélité : le code fourni correspond-il à ce qui est décrit dans l'article ? Si non, quelles sont les différences notables ?
 
-      Le code fourni correspond à ce qui est décrit dans l'article.
+      Le code fournis semble correspondre à ce qui est décrit dans l'article. On parvient à retrouver les différents algorithmes décrits dans l'article dans le code.
+      Algorithm 1: IsFlat(T,α) dans background.py
+      Algorithm 2: SignificantNodes(M,nodeTest,α,g,ˆσ2bg) dans 
+      Algorithm 3: FindObjects(M)
+      Algorithm 4: MoveUp(M,λ,g,ˆσ2bg)
+      Algorithm 5: MTObjects(I,nodeTest,α,g,λ)
 
 ## 3. Expérimentations
 - expériences reproduites : décrivez les expériences que vous avez choisies de reproduire.

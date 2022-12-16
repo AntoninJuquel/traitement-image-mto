@@ -78,11 +78,12 @@
 - la fidélité : le code fourni correspond-il à ce qui est décrit dans l'article ? Si non, quelles sont les différences notables ?
 
       Le code fournis semble correspondre à ce qui est décrit dans l'article. On parvient à retrouver les différents algorithmes décrits dans l'article dans le code.
-      Algorithm 1: IsFlat(T,α) dans background.py
-      Algorithm 2: SignificantNodes(M,nodeTest,α,g,ˆσ2bg) dans 
-      Algorithm 3: FindObjects(M)
-      Algorithm 4: MoveUp(M,λ,g,ˆσ2bg)
-      Algorithm 5: MTObjects(I,nodeTest,α,g,λ)
+      
+      Algorithm 1: IsFlat(T,α) dans background.py fonction check_tile_is_flat
+      Algorithm 2: SignificantNodes(M,nodeTest,α,g,ˆσ2bg) dans mt_objects.c fonction mt_significant_nodes_up et mt_significant_nodes_down
+      Algorithm 3: FindObjects(M) dans mt_objects.c fonction mt_find_objects
+      Algorithm 4: MoveUp(M,λ,g,ˆσ2bg) dans mt_objects.c fonction mt_move_up
+      Algorithm 5: MTObjects(I,nodeTest,α,g,λ) dans mt_objects.c fonction mt_objects
 
 ## 3. Expérimentations
 - expériences reproduites : décrivez les expériences que vous avez choisies de reproduire.

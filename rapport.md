@@ -67,6 +67,8 @@
 
       Le code fourni permet de reproduire les expériences présentées dans l'article, cependant les images utilisées ne sont pas fournies. Il est donc nécessaire de les trouver sur internet ou de les générer soi-même.
 
+      Les fichiers nécessaires à l'installation du code sont fournis, mais il est nécessaire de les compiler soi-même en lançant le fichier `recompile.sh` et d'installer les dépendances nécessaires à Python décrites dans le `README.rst`.
+
 - la structure : quelles sont les interfaces fournies ? le code est-il bien structuré ? pensez vous pouvoir le réutiliser dans un autre contexte ?
 
       Il n'y a pas d'interface graphique. L'utilisation du code se fait donc uniquement en ligne de commande et est donc limitée à des utilisateurs avertis.
